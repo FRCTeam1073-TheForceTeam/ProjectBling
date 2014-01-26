@@ -17,11 +17,12 @@ void Color_Cycler::Initialize() {
 // Called repeatedly when this Command is scheduled to run
 void Color_Cycler::Execute() {
 	Robot::bling_Bling->setLed(newcolor);
+	printf("color=%d\n", newcolor);	
 	newcolor++;
-	if (newcolor > Bling_Bling::GREEN){
+	if (newcolor > Bling_Bling::WHITE){
 		newcolor = Bling_Bling::BLUE;
 	}
-printf("color=%d\n", newcolor);	
+
 }
 // Make this return true when this Command no longer needs to run execute()
 bool Color_Cycler::IsFinished() {

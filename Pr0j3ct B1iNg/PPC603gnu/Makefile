@@ -32,7 +32,7 @@ MODE_DIR := NonDebug
 endif
 OBJ_DIR := .
 WS_ROOT_DIR := C:/WindRiver/workspace
-PRJ_ROOT_DIR := $(WS_ROOT_DIR)/Pr0j3ct\ B1iNg
+PRJ_ROOT_DIR := $(WS_ROOT_DIR)/ProjectBling/Pr0j3ct\ B1iNg
 
 
 

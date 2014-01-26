@@ -21,6 +21,7 @@ Bling_Bling::Bling_Bling() : Subsystem("Bling_Bling") {
 	blueLed = new Colors(0.0, 0.0, 1.0);
 	redLed = new Colors(1.0, 0.0, 0.0);
 	greenLed = new Colors(0.0, 1.0, 0.0);
+	whiteLed = new COlors(1.0, 1.0, 1.0);
 }
     
 void Bling_Bling::InitDefaultCommand() {
@@ -41,7 +42,7 @@ void Bling_Bling::lowerBrightness(int color){
 			duty_blue = 0;
 		}
 		//lower the color
-		blue_Light->UpdateDutyCycle(duty_blue);
+		//blue_Light->UpdateDutyCycle(duty_blue);
 		printf("duty_blue = %f\n",duty_blue);
 		}
 	else if(RED == color){
@@ -52,7 +53,7 @@ void Bling_Bling::lowerBrightness(int color){
 			duty_red = 0;
 		}
 		//lower the color
-		red_Light->UpdateDutyCycle(duty_red);
+		//red_Light->UpdateDutyCycle(duty_red);
 		printf("duty_red = %f\n",duty_red);
 	}
 	else if(GREEN == color){
@@ -63,7 +64,7 @@ void Bling_Bling::lowerBrightness(int color){
 			duty_green = 0;
 		}
 		//lower the color
-		green_Light->UpdateDutyCycle(duty_green);
+		//green_Light->UpdateDutyCycle(duty_green);
 		printf("duty_green = %f\n",duty_green);
 		
 	}
@@ -83,7 +84,7 @@ void Bling_Bling::raiseBrightness(int color){
 				duty_blue = 1;
 			}
 			//lower the color
-			blue_Light->UpdateDutyCycle(duty_blue);
+			//blue_Light->UpdateDutyCycle(duty_blue);
 			printf("duty_blue = %f\n",duty_blue);
 			}
 		else if(RED == color){
@@ -94,7 +95,7 @@ void Bling_Bling::raiseBrightness(int color){
 				duty_red = 1;
 			}
 			//lower the color
-			red_Light->UpdateDutyCycle(duty_red);
+			//red_Light->UpdateDutyCycle(duty_red);
 			printf("duty_red = %f\n",duty_red);
 		}
 		else if(GREEN == color){
@@ -105,7 +106,7 @@ void Bling_Bling::raiseBrightness(int color){
 				duty_green = 1;
 			}
 			//lower the color
-			green_Light->UpdateDutyCycle(duty_green);
+			//green_Light->UpdateDutyCycle(duty_green);
 			printf("duty_green = %f\n",duty_green);
 			
 		}
