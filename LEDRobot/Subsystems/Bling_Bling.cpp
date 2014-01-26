@@ -21,7 +21,7 @@ Bling_Bling::Bling_Bling() : Subsystem("Bling_Bling") {
 	blueLed = new Colors(0.0, 0.0, 1.0);
 	redLed = new Colors(1.0, 0.0, 0.0);
 	greenLed = new Colors(0.0, 1.0, 0.0);
-	whiteLed = new COlors(1.0, 1.0, 1.0);
+	whiteLed = new Colors(1.0, 1.0, 1.0);
 }
     
 void Bling_Bling::InitDefaultCommand() {

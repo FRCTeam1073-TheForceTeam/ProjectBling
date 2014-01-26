@@ -246,12 +246,12 @@
     <buildtargets>
         <buildtarget buildtool="Linker" name="CommandBasedRobotTemplate" passed="false" targetname="CommandBasedRobotTemplate">
             <contents>
-                <folder name="/Pr0j3ct B1iNg" recursive="true"/>
+                <folder name="/LEDRobot" recursive="true"/>
             </contents>
         </buildtarget>
         <buildtarget buildtool="Partial Image Linker" name="CommandBassedRobotTemplate_partialImage" passed="true" targetname="CommandBassedRobotTemplate_partialImage">
             <contents>
-                <folder name="/Pr0j3ct B1iNg" recursive="true"/>
+                <folder name="/LEDRobot" recursive="true"/>
             </contents>
         </buildtarget>
     </buildtargets>
