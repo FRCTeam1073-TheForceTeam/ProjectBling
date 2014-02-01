@@ -30,3 +30,4 @@ float Colors::getRed(void){
 float Colors::getGreen(void){
 	return green;
 }
+

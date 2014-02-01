@@ -153,6 +153,10 @@ CommandBasedRobotTemplate/$(MODE_DIR)/Objects/LEDRobot/Subsystems/Colors.o : $(P
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
+CommandBasedRobotTemplate/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/AnalogPressureTransducer.o : $(PRJ_ROOT_DIR)/WPILibExtensions/AnalogPressureTransducer.cpp $(FORCE_FILE_BUILD)
+	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
+
+
 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/Commands/ChangeJoystickModeCommand.o : $(PRJ_ROOT_DIR)/WPILibExtensions/Commands/ChangeJoystickModeCommand.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
@@ -162,6 +166,10 @@ CommandBasedRobotTemplate/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/Commands
 
 
 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/Commands/PrintStallData.o : $(PRJ_ROOT_DIR)/WPILibExtensions/Commands/PrintStallData.cpp $(FORCE_FILE_BUILD)
+	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
+
+
+CommandBasedRobotTemplate/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/Commands/ToggleCommand.o : $(PRJ_ROOT_DIR)/WPILibExtensions/Commands/ToggleCommand.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
@@ -185,6 +193,14 @@ CommandBasedRobotTemplate/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/SmartJoy
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
+CommandBasedRobotTemplate/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/SmartTalon.o : $(PRJ_ROOT_DIR)/WPILibExtensions/SmartTalon.cpp $(FORCE_FILE_BUILD)
+	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
+
+
+CommandBasedRobotTemplate/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/SpeedControllerSeries.o : $(PRJ_ROOT_DIR)/WPILibExtensions/SpeedControllerSeries.cpp $(FORCE_FILE_BUILD)
+	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
+
+
 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/Stallable.o : $(PRJ_ROOT_DIR)/WPILibExtensions/Stallable.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
@@ -202,14 +218,18 @@ OBJECTS_CommandBasedRobotTemplate = CommandBasedRobotTemplate/$(MODE_DIR)/Object
 	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/LEDRobot/RobotMap.o \
 	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/LEDRobot/Subsystems/Bling_Bling.o \
 	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/LEDRobot/Subsystems/Colors.o \
+	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/AnalogPressureTransducer.o \
 	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/Commands/ChangeJoystickModeCommand.o \
 	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/Commands/InterruptSubsystem.o \
 	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/Commands/PrintStallData.o \
+	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/Commands/ToggleCommand.o \
 	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/IREncoder.o \
 	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/SmartCANJaguar.o \
 	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/SmartCANJaguarSeries.o \
 	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/SmartGyro.o \
 	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/SmartJoystick.o \
+	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/SmartTalon.o \
+	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/SpeedControllerSeries.o \
 	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/Stallable.o \
 	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/StallableAnalogEncoder.o
 
@@ -292,6 +312,10 @@ CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/Subsystems/
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
+CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/AnalogPressureTransducer.o : $(PRJ_ROOT_DIR)/WPILibExtensions/AnalogPressureTransducer.cpp $(FORCE_FILE_BUILD)
+	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
+
+
 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/Commands/ChangeJoystickModeCommand.o : $(PRJ_ROOT_DIR)/WPILibExtensions/Commands/ChangeJoystickModeCommand.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
@@ -301,6 +325,10 @@ CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/WPILibExten
 
 
 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/Commands/PrintStallData.o : $(PRJ_ROOT_DIR)/WPILibExtensions/Commands/PrintStallData.cpp $(FORCE_FILE_BUILD)
+	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
+
+
+CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/Commands/ToggleCommand.o : $(PRJ_ROOT_DIR)/WPILibExtensions/Commands/ToggleCommand.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
@@ -324,6 +352,14 @@ CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/WPILibExten
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
+CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/SmartTalon.o : $(PRJ_ROOT_DIR)/WPILibExtensions/SmartTalon.cpp $(FORCE_FILE_BUILD)
+	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
+
+
+CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/SpeedControllerSeries.o : $(PRJ_ROOT_DIR)/WPILibExtensions/SpeedControllerSeries.cpp $(FORCE_FILE_BUILD)
+	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
+
+
 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/Stallable.o : $(PRJ_ROOT_DIR)/WPILibExtensions/Stallable.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
@@ -341,14 +377,18 @@ OBJECTS_CommandBassedRobotTemplate_partialImage = CommandBassedRobotTemplate_par
 	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/RobotMap.o \
 	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/Subsystems/Bling_Bling.o \
 	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/Subsystems/Colors.o \
+	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/AnalogPressureTransducer.o \
 	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/Commands/ChangeJoystickModeCommand.o \
 	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/Commands/InterruptSubsystem.o \
 	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/Commands/PrintStallData.o \
+	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/Commands/ToggleCommand.o \
 	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/IREncoder.o \
 	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/SmartCANJaguar.o \
 	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/SmartCANJaguarSeries.o \
 	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/SmartGyro.o \
 	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/SmartJoystick.o \
+	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/SmartTalon.o \
+	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/SpeedControllerSeries.o \
 	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/Stallable.o \
 	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/StallableAnalogEncoder.o
 
@@ -367,16 +407,19 @@ force :
 DEP_FILES := CommandBasedRobotTemplate/$(MODE_DIR)/Objects/LEDRobot/Commands/AutonomousCommand.d CommandBasedRobotTemplate/$(MODE_DIR)/Objects/LEDRobot/Commands/Brighter.d CommandBasedRobotTemplate/$(MODE_DIR)/Objects/LEDRobot/Commands/Color_Cycler.d \
 	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/LEDRobot/Commands/Dimmer.d CommandBasedRobotTemplate/$(MODE_DIR)/Objects/LEDRobot/OI.d CommandBasedRobotTemplate/$(MODE_DIR)/Objects/LEDRobot/Robot.d \
 	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/LEDRobot/RobotMap.d CommandBasedRobotTemplate/$(MODE_DIR)/Objects/LEDRobot/Subsystems/Bling_Bling.d CommandBasedRobotTemplate/$(MODE_DIR)/Objects/LEDRobot/Subsystems/Colors.d \
-	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/Commands/ChangeJoystickModeCommand.d CommandBasedRobotTemplate/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/Commands/InterruptSubsystem.d CommandBasedRobotTemplate/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/Commands/PrintStallData.d \
-	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/IREncoder.d CommandBasedRobotTemplate/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/SmartCANJaguar.d CommandBasedRobotTemplate/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/SmartCANJaguarSeries.d \
-	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/SmartGyro.d CommandBasedRobotTemplate/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/SmartJoystick.d CommandBasedRobotTemplate/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/Stallable.d \
-	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/StallableAnalogEncoder.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/Commands/AutonomousCommand.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/Commands/Brighter.d \
-	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/Commands/Color_Cycler.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/Commands/Dimmer.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/OI.d \
-	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/Robot.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/RobotMap.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/Subsystems/Bling_Bling.d \
-	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/Subsystems/Colors.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/Commands/ChangeJoystickModeCommand.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/Commands/InterruptSubsystem.d \
-	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/Commands/PrintStallData.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/IREncoder.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/SmartCANJaguar.d \
+	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/AnalogPressureTransducer.d CommandBasedRobotTemplate/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/Commands/ChangeJoystickModeCommand.d CommandBasedRobotTemplate/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/Commands/InterruptSubsystem.d \
+	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/Commands/PrintStallData.d CommandBasedRobotTemplate/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/Commands/ToggleCommand.d CommandBasedRobotTemplate/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/IREncoder.d \
+	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/SmartCANJaguar.d CommandBasedRobotTemplate/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/SmartCANJaguarSeries.d CommandBasedRobotTemplate/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/SmartGyro.d \
+	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/SmartJoystick.d CommandBasedRobotTemplate/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/SmartTalon.d CommandBasedRobotTemplate/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/SpeedControllerSeries.d \
+	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/Stallable.d CommandBasedRobotTemplate/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/StallableAnalogEncoder.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/Commands/AutonomousCommand.d \
+	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/Commands/Brighter.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/Commands/Color_Cycler.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/Commands/Dimmer.d \
+	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/OI.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/Robot.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/RobotMap.d \
+	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/Subsystems/Bling_Bling.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/Subsystems/Colors.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/AnalogPressureTransducer.d \
+	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/Commands/ChangeJoystickModeCommand.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/Commands/InterruptSubsystem.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/Commands/PrintStallData.d \
+	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/Commands/ToggleCommand.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/IREncoder.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/SmartCANJaguar.d \
 	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/SmartCANJaguarSeries.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/SmartGyro.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/SmartJoystick.d \
-	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/Stallable.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/StallableAnalogEncoder.d
+	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/SmartTalon.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/SpeedControllerSeries.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/Stallable.d \
+	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/LEDRobot/WPILibExtensions/StallableAnalogEncoder.d
 -include $(DEP_FILES)
 
 
