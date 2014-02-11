@@ -1,6 +1,9 @@
 /* Ported from Jeffrey Kabel's ledstrip.ino program. Moves LED code
  * into a Bling class to match the 2014 1073 Robot and allow
  * portability of algorithms between the robot and the arduino.
+ * 
+ * Wire Red->5V, Green/Blk->Ground
+ * White->Pin13, Blue->Pin11 
  */
 
 #include <SPI.h>
